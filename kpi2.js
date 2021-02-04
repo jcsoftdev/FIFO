@@ -14,7 +14,7 @@ const store = {
 };
 
 // second kpi
-
+const reducer = (accumulator, currentValue) => accumulator + currentValue;
 document.getElementById("form-2").addEventListener("submit", (e) => {
   e.preventDefault();
   const elements = e.currentTarget.elements;

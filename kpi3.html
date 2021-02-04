@@ -38,65 +38,52 @@
 
     <div class="row">
       <div class="col-md-6">
-        <h2>Primer KPI</h2>
-        <form id="form-1">
+        <h2>Tercer KPI</h2>
+        <form id="form-3">
           <div class="mb-3">
             <label for="request" class="form-label"
-              >Cantidad de referencias Solicitada</label
+              >Costos de distribución anual</label
             >
             <input
               type="number"
               class="form-control"
-              id="request"
               placeholder=""
-              name="request"
+              name="cost"
               required
             />
           </div>
           <div class="mb-3">
             <label for="completed" class="form-label"
-              >Cantidad de referencias Entregada Completas</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              id="completed"
-              placeholder=""
-              name="completed"
-              required
-            />
-          </div>
-          <!-- <div class="mb-3">
-            <label for="completed" class="form-label"
-              >Esperado</label
+              >ventas anuales</label
             >
             <input
               type="number"
               class="form-control"
               placeholder=""
-              name="expected"
+              name="sales"
               required
             />
           </div>
           <div class="mb-3">
             <label for="completed" class="form-label"
-              >Aceptable</label
+              >unidades de embalaje despachadas</label
             >
             <input
               type="number"
               class="form-control"
               placeholder=""
-              name="acceptable"
+              name="unit"
               required
             />
-          </div> -->
-          <button class="btn btn-success">Next</button>
+          </div>
+          <button class="btn btn-success">Calcular</button>
         </form>
-        <div class="table-responsive mt-3" id="table1">
+        <div class="row mt-3" id="alert">
         </div>
+        </form>
       </div>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="./kpi.js"></script>
+    <script src="./kpi3.js"></script>
   </body>
 </html>

@@ -144,7 +144,7 @@ function getTable2(store = store) {
 
   <thead>
   <tr>
-  <th scope="col">Nro Periodos</th>
+  <th scope="col">#</th>
   ${ths}
   <th>Total</th>
   </tr>
@@ -152,7 +152,7 @@ function getTable2(store = store) {
   <tbody>
   <tr>
   <th>
-  Cantidad de referencias Solicitada
+  Costo de inventario
   </th>
   ${tds}
   <td>${total}</td>

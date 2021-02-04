@@ -71,17 +71,17 @@ function getBadge(result, expected, accepted, prefix, left=false) {
   let alert = "";
   if (result < expected) {
     alert += `
-    <div class="col-md-6 alert alert-success" role="alert">
+    <div class="col-md-12 alert alert-success" role="alert">
       ${left?prefix:''} ${result} ${!left?prefix:''}
     </div>`;
   } else if (result < accepted) {
     alert += `
-    <div class="col-md-6 alert alert-warning" role="alert">
+    <div class="col-md-12 alert alert-warning" role="alert">
       ${left?prefix:''} ${result} ${!left?prefix:''}
     </div>`;
   } else {
     alert += `
-    <div class="col-md-6 alert alert-danger" role="alert">
+    <div class="col-md-12 alert alert-danger" role="alert">
       ${left?prefix:''} ${result} ${!left?prefix:''}
     </div>`;
   }

@@ -24,7 +24,9 @@ document.getElementById("form-2").addEventListener("submit", (e) => {
   store.kpi2.month.push(month);
   store.kpi2.cost.push(cost);
   store.kpi2.neto = neto;
-
+  elements['month'].value=''
+  elements['cost'].value=''
+  elements['neto'].value=''
   const $table2 = document.getElementById("table2");
   $table2.innerHTML = getTable2(store);
 });
@@ -42,7 +44,7 @@ function getTable2(store = store) {
   let alert = getBadge(result, 7, 15, 'Días')
 
   const template = `
-  <table class="table table-dark table-bordered border-primary" >
+  <table class="fl-table mb-3" >
 
   <thead>
   <tr>
@@ -51,7 +53,7 @@ function getTable2(store = store) {
   <th>Costo promedio del inventario</th>
   </tr>
   </thead>
-  <tbody>
+  <tbody class='fl-table'>
   <tr>
   <th>
   Costo de inventario

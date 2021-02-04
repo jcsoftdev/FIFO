@@ -1,0 +1,137 @@
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 4px;
+}
+::-webkit-scrollbar:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+::-webkit-scrollbar:hover:active {
+  background: #999;
+}
+
+
+
+.btn {
+  background-color: rgba(104, 48, 195, 0.85);
+  color: #fff;
+  border: 0;
+  margin: 0.2rem 0;
+  border-radius: 1rem;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in;
+}
+
+.btn:hover {
+  background-color: rgba(104, 48, 195, 1);
+  color: #fff;
+}
+.btn-secondary {
+  background-color:#f20089;
+  color: #fff;
+}
+.btn-secondary:hover {
+  background-color: #db00b6;
+}
+.btn:disabled,
+.btn[disabled] {
+  border: 1px solidrgba(104, 48, 195, 1);
+  background-color: rgba(104, 48, 195, 0.5);
+  cursor: not-allowed;
+}
+
+
+.form-group {
+  margin: 0.25rem 0;
+}
+
+.level__label {
+  color: #1a0d31;
+  /* font-weight: 100; */
+  padding-left: 0.5rem;
+}
+
+.form__input {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  border: 1px solid rgba(36, 52, 70, 0.65);
+  outline: none;
+  font-size: 0.9rem;
+  color: #1f063b;
+  font-weight: 400;
+}
+
+.form__input:active,
+.form__input:focus {
+  border: 2px solid rgba(104, 48, 195, 0.9);
+  color: rgba(104, 48, 195, 0.9);
+}
+
+.list-group-item.active, .dropdown-item.active, .dropdown-item:active {
+  
+  background-color: rgba(104, 48, 195, 0.85);
+  border-color: rgba(104, 48, 195, 1);
+}
+/* Table Styles */
+
+.table-wrapper {
+  /* margin: 10px 70px 70px; */
+  /* box-shadow: 0px 35px 50px rgba(0, 0, 0, 0.2); */
+}
+
+.table-wrapper p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.fl-table {
+  border-radius: 5px;
+  font-size: 12px;
+  font-weight: normal;
+  border: none;
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 100%;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.fl-table td,
+.fl-table th {
+  text-align: center;
+  padding: 8px;
+}
+
+.fl-table td {
+  border-right: 1px solid #f8f8f8;
+  font-size: 12px;
+}
+
+.fl-table thead {
+  box-sizing: border-box;
+  background-color: rgba(77, 25, 160, 0.9);
+  color: #ffffff;
+}
+
+.fl-table tbody th {
+  color: #ffffff;
+  background: rgba(77, 25, 160, 0.856);
+}
+
+.fl-table tbody td:nth-child(odd) {
+  color: #ffffff;
+  background: rgba(104, 48, 195, 0.8);
+}
+
+.fl-table tr:nth-child(even) {
+  background: #f1f1f1;
+}

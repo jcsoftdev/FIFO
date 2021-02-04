@@ -1,35 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>KPI</title>
+    <title>Cadena de Suministros</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
       crossorigin="anonymous"
     />
-  </head>
+  <link rel="stylesheet" href="./styles/app.css">
+</head>
   <body class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" href="#">KPI</a>
+        <a class="navbar-brand" href="#">Menu</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link" href="./kpi.html">Indicador de Servicio</a>
+              <a class="nav-link" href="./index.html">Método FIFO</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./kpi2.html"> Indicador de Inventario</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./kpi3.html">Indicador de Gestión logística</a>
-            </li> <li class="nav-item">
-              <a class="nav-link" href="./index.html">FIFO</a>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                KPI's
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item active" href="./kpi.html">Indicador de Servicio</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./kpi2.html"> Indicador de Inventario</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="./kpi3.html">Indicador de Gestión logística</a>
+                </li> <li class="nav-item">
+                </li>
+              </ul>
             </li>
           </ul>
         </div>
@@ -46,7 +56,7 @@
             >
             <input
               type="number"
-              class="form-control"
+              class="form__input"
               id="request"
               placeholder=""
               name="request"
@@ -59,40 +69,16 @@
             >
             <input
               type="number"
-              class="form-control"
+              class="form__input"
               id="completed"
               placeholder=""
               name="completed"
               required
             />
           </div>
-          <!-- <div class="mb-3">
-            <label for="completed" class="form-label"
-              >Esperado</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              placeholder=""
-              name="expected"
-              required
-            />
-          </div>
-          <div class="mb-3">
-            <label for="completed" class="form-label"
-              >Aceptable</label
-            >
-            <input
-              type="number"
-              class="form-control"
-              placeholder=""
-              name="acceptable"
-              required
-            />
-          </div> -->
-          <button class="btn btn-success">Next</button>
+          <button class="btn ">Siguiente</button>
         </form>
-        <div class="table-responsive mt-3" id="table1">
+        <div class=" table-wrapper mt-3" id="table1">
         </div>
       </div>
     </div>

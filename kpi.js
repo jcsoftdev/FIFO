@@ -20,7 +20,8 @@ document.getElementById("form-1").addEventListener("submit", (e) => {
   store.kpi1.request.push(request);
   store.kpi1.completed.push(completed);
   const $table1 = document.getElementById("table1");
-
+  elements['request'].value=''
+  elements['completed'].value=''
   $table1.innerHTML = getTable(store);
 });
 
@@ -64,7 +65,7 @@ function getTable(store = store) {
   const alert = getAlert(result, 80, 40);
 
   const template = `
-  <table class="table table-dark table-bordered border-primary" >
+  <table class="fl-table mb-3" >
 
   <thead>
   <tr>
@@ -73,7 +74,7 @@ function getTable(store = store) {
   <th>Total</th>
   </tr>
   </thead>
-  <tbody>
+  <tbody class='fl-table'>
   <tr>
   <th>
   Cantidad de referencias Solicitada

@@ -175,12 +175,12 @@ document.getElementById('form-3').addEventListener('submit',(e)=>{
   store.kpi3.cost = (cost);
   store.kpi3.unit = (unit);
 
-  const res1 = cost/sales 
+  const res1 = cost/sales *100
   const res2 = cost/unit
 
   const badges = `
     ${getBadge(res1, 15, 40 )}
-    ${getBadge(res1, 2000, 3000 )}
+    ${getBadge(res2, 2000, 3000 )}
   `
 
   document.getElementById('alert').innerHTML = badges

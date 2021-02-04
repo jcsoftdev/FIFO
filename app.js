@@ -1,6 +1,25 @@
 const store = {
   current: "",
-  days: {},
+  days: {
+    // "2021-01-01": {
+    //   purchases: [],
+    //   sales: [],
+    //   stocks: [{ price: 500, quantity: 512 }],
+    // },
+    // "2021-01-05": {
+    //   purchases: [],
+    //   sales: [{ quantity: 200, price: 500 }],
+    //   stocks: [{ quantity: 312, price: 500 }],
+    // },
+    // "2021-02-21": {
+    //   purchases: [{ price: 520, quantity: 100 }],
+    //   sales: [],
+    //   stocks: [
+    //     { quantity: 312, price: 500 },
+    //     { price: 520, quantity: 100 },
+    //   ],
+    // },
+  },
 };
 const listItems = document.getElementById("list-values");
 // switcher  value
@@ -59,8 +78,9 @@ $formAdd.addEventListener("submit", (e) => {
   elements["price"].value = "";
   elements["date"].value = "";
   // getTotal(store);
-  document.getElementsByClassName('table-responsive')[0].className = 'table-responsive mt-3 '
-  renderTable(store)
+  document.getElementsByClassName("table-responsive")[0].className =
+    "table-responsive mt-3 ";
+  renderTable(store);
 });
 
 const getDays = (store) => Array.from(Object.keys(store.days));
@@ -93,7 +113,7 @@ const getSotckWithSales = (store, day, salesQuantity) => {
       remaining > 0 &&
         sales.push({ quantity: remaining, price: prevStock[i].price });
       remaining = 0;
-      nextStock.push({ quantity, price: prevStock[0].price });
+      nextStock.push({ quantity, price: prevStock[i].price });
     } else {
       remaining = remaining - prevStock[i].quantity;
       sales.push({
@@ -112,7 +132,7 @@ function renderTable(store, con) {
   const $tableContainer = document.getElementById("table-container");
   $tableContainer.innerHTML = "";
   const days = getDays(store);
-  const trows = []
+  const trows = [];
   days.forEach((day) => {
     const length = Math.max(
       store.days[day].purchases.length,
@@ -193,9 +213,10 @@ function renderTable(store, con) {
       console.log($tr);
       trDay.push($tr);
     }
-    trows.push(...trDay)
+    trows.push(...trDay);
     console.log(trDay);
     // console.log($tr)
   });
   $tableContainer.append(...trows);
 }
+renderTable(store)
